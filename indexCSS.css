@@ -1,0 +1,16 @@
+.topDownBar{
+    background-color: black;
+}
+
+.topDownBar a{
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100px;
+    font-size:5em;
+    padding-left: 50px;
+    padding-right:50px;
+}
+
+.topDownBar span{
+    padding-right:5vh;
+}
