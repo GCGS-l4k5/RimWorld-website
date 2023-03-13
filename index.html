@@ -5,10 +5,48 @@
     <title>RimWorld</title>
 </head>
 <body>
-    <div class="topDownBar">
-        <img src="images/90895949-7b5b9380-e3e0-11ea-832e-de8393454714.png" height="100px" style="position:absolute;">
+    <div class="navbar" id="navbar">
+        <img src="images/90895949-7b5b9380-e3e0-11ea-832e-de8393454714.png" height="100px" style="position:absolute;" class="navbarlogos">
+        <img src="images/Rimworldtrans.png" height="100px" stlye="position:absolute" class="navbarlogos">
         <nav style="text-align: right; position: relative;">
             <a><span class="fa-solid fa-house"></span>Home</a>
         </nav>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
+
+<script type="text/Javascript">
+  window.onscroll = function() {stickyNavBar()};
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  var slideIndex = 0;
+  
+  
+  function stickyNavBar() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
