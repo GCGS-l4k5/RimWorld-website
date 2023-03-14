@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'rimwordfontregular';
+    src: url('font/rimwordfont-webfont.woff2') format('woff2'),
+         url('font/rimwordfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body{
     margin: 0;
 }
@@ -54,4 +62,10 @@ body{
     background-image: url(images/background1.jpg);
     background-attachment: fixed;
     background-position: center;
+}
+
+h1{
+    font-family: rimwordfontregular;
+    font-size: 100px;
+    text-align: center;
 }
