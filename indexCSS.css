@@ -1,6 +1,9 @@
 body{
     margin: 0;
 }
+::-webkit-scrollbar{
+    display:none;
+}
 
 .navbar{
     background-color: black;
@@ -21,11 +24,34 @@ body{
 
 #navbar{
     transition: 0.2s ease;
+    top:-100px;
+}
+#navbar > #fullLogo{
+    height:0px;
+}
+#navbar > #smalllogo{
+    height:100px;
 }
 #navbar.sticky{
     position: fixed;
     top: 0;
     width: 100%;
-    font-size: 15px;
-    transition: 0.2s ease;
+    transition: 1s ease;
+    transition: top 0.5s ease-in;
+}
+
+#navbar.sticky > #fullLogo{
+    height: 100px;
+}
+#navbar.sticky > #smalllogo{
+    height: 0px;
+}
+
+.introductionImage{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/background1.jpg);
+    background-attachment: fixed;
+    background-position: center;
 }

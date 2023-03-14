@@ -4,40 +4,29 @@
 <head>
     <title>RimWorld</title>
 </head>
-<body>
-    <div class="navbar" id="navbar">
-        <img src="images/90895949-7b5b9380-e3e0-11ea-832e-de8393454714.png" height="100px" style="position:absolute;" class="navbarlogos">
-        <img src="images/Rimworldtrans.png" height="100px" stlye="position:absolute" class="navbarlogos">
+<body style="background-color: gray;">
+    <div class="navbar" id="navbar" style="padding-left:15px;">
+        <img src="images/90895949-7b5b9380-e3e0-11ea-832e-de8393454714.png" style="position:absolute;" class="navbarlogos" id="smalllogo">
+        <img src="images/Rimworldtrans.png" style="position:absolute" class="navbarlogos" id="fullLogo">
         <nav style="text-align: right; position: relative;">
             <a><span class="fa-solid fa-house"></span>Home</a>
         </nav>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="introductionImage" style="padding-top:300px; padding-bottom: 500px;">
+      <img src="images/Rimworldtrans.png" style="width:50vw;" id="RimWorldLogoIntro">
+    </div>
+    <div class="introduction" style="padding:10px;">
+      <p>lololol</p>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
 </body>
 
 <script type="text/Javascript">
   window.onscroll = function() {stickyNavBar()};
-  var navbar = document.getElementById("navbar");
-  var sticky = navbar.offsetTop;
+  var wrapper = document.getElementById("RimWorldLogoIntro");
+  var sticky = wrapper.offsetTop;
+  var navbar = document.getElementById("navbar")
+  var navbarOffset = navbar.offsetTop;
 
   var slideIndex = 0;
   
@@ -45,7 +34,7 @@
   function stickyNavBar() {
     if (window.pageYOffset >= sticky) {
       navbar.classList.add("sticky")
-    } else {
+    } else if(window.pageYOffset >= navbarOffset) {
       navbar.classList.remove("sticky");
     }
   }
