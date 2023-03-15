@@ -6,6 +6,9 @@
     font-style: normal;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
 }
@@ -15,6 +18,7 @@ body{
 
 .navbar{
     background-color: black;
+    display:block
 }
 
 .navbar a{
@@ -32,8 +36,11 @@ body{
 
 #navbar{
     transition: 0.2s ease;
-    top:-100px;
+    transition: top 0.5s ease;
+    top: -100px;
+    display: block;
 }
+
 #navbar > #fullLogo{
     height:0px;
 }
@@ -42,21 +49,31 @@ body{
 }
 #navbar.sticky{
     position: fixed;
+    z-index: 1000;
     top: 0;
     width: 100%;
     transition: 1s ease;
     transition: top 0.5s ease-in;
 }
 
+.navbar.sticky {
+    font-size: 10px;
+}
+
 #navbar.sticky > #fullLogo{
-    height: 100px;
+    height: 60px;
 }
 #navbar.sticky > #smalllogo{
     height: 0px;
 }
 
+#navbar.sticky + .introductionImage{
+    padding-bottom: 610px;
+}
+
 .introductionImage{
     display:flex;
+    padding-bottom: 500px;
     align-items: center;
     justify-content: center;
     background-image: url(images/background1.jpg);
@@ -68,4 +85,29 @@ h1{
     font-family: rimwordfontregular;
     font-size: 100px;
     text-align: center;
+}
+
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+.bodyParagraphP{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+.bodyParagraphP > p{
+    padding-right:50%;
+    
+}
+.wipeAnimation{
+    animation: wipe 0.5s forwards ease;
+    animation-delay: 0.5s;
+}
+
+@keyframes wipe{
+    0%{padding-right: 0%}
+    100%{padding-right: 50%}
 }

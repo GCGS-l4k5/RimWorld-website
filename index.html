@@ -1,40 +1,36 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="indexCSS.css">
-<script src="https://kit.fontawesome.com/be8702eee7.js" crossorigin="anonymous"></script>
-<head>
-    <title>RimWorld</title>
-</head>
-<body>
-    <div class="navbar" id="navbar" style="padding-left:15px;">
-        <img src="images/90895949-7b5b9380-e3e0-11ea-832e-de8393454714.png" style="position:absolute;" class="navbarlogos" id="smalllogo">
-        <img src="images/Rimworldtrans.png" style="position:absolute" class="navbarlogos" id="fullLogo">
-        <nav style="text-align: right; position: relative;">
-            <a><span class="fa-solid fa-house"></span>Home</a>
-        </nav>
-    </div>
-    <div class="introductionImage" style="padding-top:300px; padding-bottom: 500px;">
-      <img src="images/Rimworldtrans.png" style="width:50vw;" id="RimWorldLogoIntro">
-    </div>
-    <div class="introduction" style="padding:10px;">
-      <h1>What is RimWorld?</h1>
-    </div>
-</body>
+<html>
+  <head>
+      <title>RimWorld</title>
+      <link rel="icon" href="images/90895949-7b5b9380-e3e0-11ea-832e-de8393454714.png">
+      <link rel="stylesheet" href="indexCSS.css">
+      <script src="https://kit.fontawesome.com/be8702eee7.js" crossorigin="anonymous"></script>
+      
+  </head>
+  <body>
+      <div class="navbar" id="navbar" style="padding-left:15px;">
+          <img src="images/90895949-7b5b9380-e3e0-11ea-832e-de8393454714.png" style="position:absolute;" class="navbarlogos" id="smalllogo">
+          <img src="images/Rimworldtrans.png" style="position:absolute" class="navbarlogos" id="fullLogo">
+          <nav style="text-align: right; position: relative;">
+              <a><span class="fa-solid fa-house"></span>Home</a>
+          </nav>
+      </div>
+      <div class="introductionImage" style="padding-top:300px;">
+        <img src="images/Rimworldtrans.png" style="width:50vw;" id="RimWorldLogoIntro">
+      </div>
+      <div class="introduction" style="padding:10px; background-color: white;">
+        <h1>What is RimWorld?</h1>
+      </div>
 
-<script type="text/Javascript">
-  window.onscroll = function() {stickyNavBar()};
-  var wrapper = document.getElementById("RimWorldLogoIntro");
-  var sticky = wrapper.offsetTop;
-  var navbar = document.getElementById("navbar")
-  var navbarOffset = navbar.offsetTop;
+      <div class="bodyP" style="background-color: black;">
+        <div class="bodyParagraphP" style="background-image: url(images/l56fdew7qtt21.png); padding-bottom: 250px; padding-top:250px;">
+          <p style="display:inline; padding: 10px 50px; font-size: 25px; color:white; 
+          text-align: center; background-color:black; width: 100%;">
+            RimWorld is a sci-fi game that revolves around surviving in an alien planet. As you explore your new home, you will meet animals, humans and more. Danger is everywhere.
+          </p>
+        </div>
+      </div>
 
-  var slideIndex = 0;
-  
-  
-  function stickyNavBar() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else if(window.pageYOffset >= navbarOffset) {
-      navbar.classList.remove("sticky");
-    }
-  }
-  </script>
+  </body>
+</html>
+<script type="text/javascript" src="script.js"></script>
