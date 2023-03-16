@@ -18,7 +18,8 @@ body{
 
 .navbar{
     background-color: black;
-    display:block
+    display:block;
+    padding-bottom: 5px;
 }
 
 .navbar a{
