@@ -55,6 +55,7 @@ body{
     width: 100%;
     transition: 1s ease;
     transition: top 0.5s ease-in;
+
 }
 
 .navbar.sticky {
@@ -68,19 +69,6 @@ body{
     height: 0px;
 }
 
-#navbar.sticky + .introductionImage{
-    padding-bottom: 610px;
-}
-
-.introductionImage{
-    display:flex;
-    padding-bottom: 500px;
-    align-items: right;
-    justify-content: right;
-    background-image: url(images/rimworldbackground.jpg);
-    background-attachment: fixed;
-    background-position: center;
-}
 
 .title{
     background-color:black;

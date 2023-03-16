@@ -3,7 +3,7 @@ var wrapper = document.getElementById("RimWorldLogoIntro");
 var sticky = wrapper.offsetTop;
 var navbar = document.getElementById("navbar")
 var navbarOffset = navbar.offsetTop;
-
+var rellax = new Rellax(".rellax")
 
 
 function stickyNavBar() {
@@ -30,7 +30,7 @@ observer.observe(document.querySelector('.bodyParagraphP'))
 
 const gameplayImage = document.getElementById("backgroundSlideShow")
 var slideIndex = 0;
-var slideImage = ["url(images/background1.jpg)", "url(images/gameplay.jpg)"]
+var slideImage = ["url(images/background1.jpg)", "url(images/gameplay.jpg)", "url(images/gameplay3.jpg)"]
 
 function changeGameplay(){
     if(slideIndex == 0){
@@ -40,7 +40,12 @@ function changeGameplay(){
     }
     else if(slideIndex == 1){
         gameplayImage.style.backgroundImage=slideImage[1];
-        console.log("Switch images to", slideImage[1])
+        console.log("Switch images to", slideImage[1]);
+        slideIndex = 2;
+    }
+    else if(slideIndex== 2){
+        gameplayImage.style.backgroundImage=slideImage[2];
+        console.log("Switch images to", slideImage[2]);
         slideIndex = 0;
     }
     setTimeout(changeGameplay, 5000);
