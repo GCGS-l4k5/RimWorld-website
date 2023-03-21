@@ -68,7 +68,25 @@ body{
 #navbar.sticky > #smalllogo{
     height: 0px;
 }
-
+#storePage{
+    border: solid 1px;
+    border-radius: 6px 6px 6px 6px;
+    border-color: white;
+    height: 50vh;
+    width: 50vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(images/AIdirectors.jpg);
+    transition: 0.5s linear;
+}
+#storePage:hover{
+    border-radius: 0px 0px 0px 0px;
+    border-color:red;
+    height: 51vh;
+    width: 51vw;
+    transition: 0.5s linear;
+}
 
 .title{
     background-color:black;
