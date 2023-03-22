@@ -23,11 +23,8 @@
       </div>
     </section>
 
-    <section style="height: 100vh; padding-bottom: 218px;">
-      <div style="z-index: -1; position:absolute; width: 100%;">
-        <img src="images/rimworldbackground.jpg" style="height:inherit; width: 100%;" id="homeBackground">
-      </div>
-      <div class="rellax" data-rellax-speed="5" style="
+    <section style="height: 100vh; padding-bottom: 218px; background-image: url(images/rimworldbackground.jpg); background-repeat: no-repeat; background-size:cover; bac">
+      <div class="rellax" data-rellax-speed="10" style="
         display:flex;
         margin-left: 30px;
         padding-bottom: 350px;
@@ -50,7 +47,7 @@
         <h1>What is RimWOrld?</h1>
       </div>
       <div class="bodyP" style="background-color: black;">
-        <div class="bodyParagraphP" style="background-image: url(images/l56fdew7qtt21.png); padding-bottom: 350px; padding-top:250px; background-attachment: fixed; background-position: center;">
+        <div class="bodyParagraphP" style="background-image: url(images/l56fdew7qtt21.png); padding-bottom: 350px; padding-top:250px; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;" id="bodydetails">
           <p>
             RimWorld is a sci-fi game that revolves around surviving in an alien planet. RimWorld is a construction, management and colony simulator.
           </p>
@@ -60,8 +57,11 @@
         <h1>The gameplay</h1>
       </div>
       <div class="bodyP">
-        <div class="bodyParagraphP" style="background-image: url(images/gameplay.jpg); padding-bottom: 0px; padding-top:0px; background-position: center; background-repeat: no-repeat; background-size:100%;" id="backgroundSlideShow">
-          <p style="float:left; text-align: left; max-width: 25%; margin:0; padding-top:100px; padding-bottom: 100px; border-radius: 0;">
+        <div class="bodyParagraphP" style="background-image: url(images/gameplay.jpg); padding-bottom: 0px; padding-top:0px; background-position: center; background-repeat: no-repeat; background-size:100%;     display: flex;
+        justify-content: left;
+        align-items: left;
+        text-align: left;" id="backgroundSlideShow">
+          <p style="float:left; text-align: left; max-width: 25vh; margin:0; padding-top:100px; padding-bottom: 100px; border-radius: 0;">
             RimWorld's main gamemode follows 3 survivors who crashlanded into an alien planet in the future. The survivors try to rebuild their lives; but during their time here, they will find other humans, animals, galatic federations, <i>ancients</i> and cults also live on this planet; some hostile and some not. 
             As you rebuild, more humans and animals will join you and more will attack you too.  
           </p>

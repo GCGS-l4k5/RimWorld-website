@@ -18,16 +18,18 @@ body{
 
 .navbar{
     background-color: black;
-    display:block;
+    display:flex;
     height:40px;
     padding-bottom: 5px;
+    align-content: center;
+    justify-content: center;
 }
 
 .navbar a{
     color:white;
     font-family: 'rimwordfontregular';
     height: 60px;
-    font-size:1.5em;
+    font-size:2vh;
     padding-left: 25px;
     padding-right:25px;
     text-decoration: none;
@@ -112,12 +114,14 @@ p{
     text-align: left;
 }
 
-.bodyParagraphP{
+#bodydetails{
     display: flex;
     justify-content: left;
     align-items: left;
-    text-align: left;
+    text-align: left;   
 }
+
+
 .bodyParagraphP > p{
     padding-right:50%;
     border: 1px;
