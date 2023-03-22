@@ -140,6 +140,18 @@ p{
     margin: 0;
     width:fit-content;
 }
+#rellaxImage{
+    display:flex;
+    align-items: right;
+    justify-content: right;
+}
+#caption{
+    color:white;
+    font-size: 10px;
+    display:inline-block;
+    position:absolute;
+    font-weight:bold;
+}
 .wipeAnimation{
     animation: wipe 0.5s forwards ease;
     animation-delay: 0.8s;
