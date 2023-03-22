@@ -125,6 +125,21 @@ p{
     display:inline; padding: 10px 50px; font-size: 25px; color:white; 
     text-align: center; background-color:black; width: 100%;
 }
+#detailedInfo{
+    border: 1px;
+    border-radius: 0px;
+    margin: 0px;
+}
+#date{
+    border-right: solid 3px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-right-color: white;
+    border-radius: 0px;
+    text-align: center;
+    margin: 0;
+    width:fit-content;
+}
 .wipeAnimation{
     animation: wipe 0.5s forwards ease;
     animation-delay: 0.8s;
