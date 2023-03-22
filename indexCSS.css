@@ -179,3 +179,43 @@ p{
     0%{padding-right: 0%;}
     100%{padding-right: 50%; padding-left: 20px;}
 }
+
+#reviewsTable{
+    color: white;
+    font-size: 35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+th{
+    font-family: "rimwordfontregular";
+    padding: 40px 0px 40px 0px;
+    width: fit-content;
+}
+td{
+    font-family: "rimwordfontregular";
+    width: fit-content;
+    padding-left: 10%;
+
+}
+.awardCardsCollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#awardCard{
+    border-color: white;
+    border: solid 1px;
+    color:white;
+    display: inline-flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    height: 100px;
+}
+#awardCard > img{
+    height: 100px;
+    padding-right: 20px
+}
+
