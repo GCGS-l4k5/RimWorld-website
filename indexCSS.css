@@ -19,16 +19,22 @@ body{
 .navbar{
     background-color: black;
     display:block;
+    height:40px;
     padding-bottom: 5px;
 }
 
 .navbar a{
     color:white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'rimwordfontregular';
     height: 60px;
-    font-size:3em;
+    font-size:1.5em;
     padding-left: 25px;
     padding-right:25px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: skyblue;
+    font-weight: bolder;
 }
 
 .navbar span{
@@ -46,7 +52,7 @@ body{
     height:0px;
 }
 #navbar > #smalllogo{
-    height:60px;
+    height:40px;
 }
 #navbar.sticky{
     position: fixed;
@@ -55,6 +61,7 @@ body{
     width: 100%;
     transition: 1s ease;
     transition: top 0.5s ease-in;
+    height: 35px;
 
 }
 
@@ -78,14 +85,14 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(images/AIdirectors.jpg);
-    transition: 0.5s linear;
+    transition: 0.2s linear;
 }
 #storePage:hover{
     border-radius: 0px 0px 0px 0px;
     border-color:red;
     height: 51vh;
     width: 51vw;
-    transition: 0.5s linear;
+    transition: 0.2s linear;
 }
 
 .title{
