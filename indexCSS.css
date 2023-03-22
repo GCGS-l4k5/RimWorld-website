@@ -117,7 +117,7 @@ h1{
 }
 
 p{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Barlow', sans-serif;
     text-align: left;
 }
 
@@ -127,8 +127,23 @@ p{
     align-items: left;
     text-align: left;   
 }
+#bodydetails > p{
+    display:inline; 
+    padding: 10px 50px; 
+    font-size: 25px; 
+    color:white; 
+    text-align: center; 
+    background-color:black;
+}
 
-
+#date{
+    border: solid 1px;
+    border-right-color: white;
+    border-radius: 0px;
+    text-align: center;
+    margin: 0;
+    width: 5vw;
+}
 .bodyParagraphP > p{
     padding-right:50%;
     border: 1px;
@@ -136,21 +151,13 @@ p{
     display:inline; padding: 10px 50px; font-size: 25px; color:white; 
     text-align: center; background-color:black; width: 100%;
 }
+
 #detailedInfo{
     border: 1px;
     border-radius: 0px;
     margin: 0px;
 }
-#date{
-    border-right: solid 3px;
-    border-top: solid 1px;
-    border-bottom: solid 1px;
-    border-right-color: white;
-    border-radius: 0px;
-    text-align: center;
-    margin: 0;
-    width:fit-content;
-}
+
 #rellaxImage{
     display:flex;
     align-items: right;
