@@ -6,14 +6,11 @@
     font-style: normal;
 
 }
-html{
-    scroll-behavior: smooth;
-}
 body{
     margin: 0;
 }
 ::-webkit-scrollbar{
-    display:none;
+    display: none;
 }
 
 .navbar{
@@ -235,27 +232,4 @@ li{
     font-family: 'Barlow', sans-serif;
     padding-top: 10px;
     color:white;
-}
-.imageCollection{
-    display:block; 
-    position:absolute;
-    left:0;
-    top:50;
-    white-space: nowrap;
-    background-image: url("images/scrollimage.png");
-    width: auto;
-    height: 40%;
-    max-height: 800px;
-    animation: slideshow 120s linear infinite;
-    
-}
-
-@keyframes slideshow{
-    100%{transform: translateX(-66.6666%)}
-}
-#screenshotCard{
-    display:inline;
-    white-space: nowrap;
-    height: 25%;
-    width: 25%;
 }
