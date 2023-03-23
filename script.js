@@ -4,6 +4,9 @@ var sticky = wrapper.offsetTop;
 var navbar = document.getElementById("navbar")
 var navbarOffset = navbar.offsetTop;
 var rellax = new Rellax(".rellax")
+var rellax = new Rellax(".horizontalRellax",{ 
+    horizontal: true,
+    vertical: false})
 
 
 function stickyNavBar() {

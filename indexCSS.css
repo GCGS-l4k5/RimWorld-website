@@ -63,6 +63,12 @@ body{
     transition: 1s ease;
     transition: top 0.5s ease-in;
     height: 35px;
+    align-content: right;
+    justify-content: right;
+}
+#navbar.sticky > nav{
+    justify-content: right;
+    align-items: right;
 }
 nav{
     height: inherit;
@@ -104,9 +110,10 @@ nav{
 
 .title{
     background-color:black;
-    position: absolute;
+    position: relative;
     z-index: 2;
     width: 100%;
+    padding: 50px 0px 50px 0px;
 }
 
 h1{
@@ -114,6 +121,7 @@ h1{
     font-size: 80px;
     text-align: center;
     color: white;
+    margin:0;
 }
 
 p{
@@ -190,18 +198,21 @@ p{
 th{
     font-family: "rimwordfontregular";
     padding: 40px 0px 40px 0px;
-    width: fit-content;
+    width: 50px;
 }
 td{
     font-family: "rimwordfontregular";
-    width: fit-content;
+    width: 50px;
     padding-left: 10%;
+    
 
 }
 .awardCardsCollection{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 #awardCard{
     border-color: white;
@@ -213,9 +224,38 @@ td{
     align-items: center;
     margin-left: 10px;
     height: 100px;
+    position: relative;
+    z-index: 1;
 }
 #awardCard > img{
     height: 100px;
     padding-right: 20px
 }
+li{
+    font-family: 'Barlow', sans-serif;
+    padding-top: 10px;
+    color:white;
+}
+.imageCollection{
+    display:block; 
+    position:absolute;
+    left:0;
+    top:50;
+    white-space: nowrap;
+    background-image: url("images/scrollimage.png");
+    width: auto;
+    height: 40%;
+    max-height: 800px;
+    animation: slideshow 120s linear infinite;
+    
+}
 
+@keyframes slideshow{
+    100%{transform: translateX(-66.6666%)}
+}
+#screenshotCard{
+    display:inline;
+    white-space: nowrap;
+    height: 25%;
+    width: 25%;
+}
